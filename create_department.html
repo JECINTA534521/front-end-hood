@@ -16,7 +16,7 @@ input[type=text], input[type=password] {
 }
 
 button {
-  background-color:crimson;
+  background-color: blue;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -68,26 +68,46 @@ span.psw {
 </head>
 <body>
 
-<h2>Update Profile Form</h2>
+<h2>Create Department</h2>
 
-<form action="create_department.html">
+<form action="index.html">
  
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="email"><b>Email</b></label>
-    <input type="password" placeholder="Enter email" name="email" required>
-
-    <label for="text"><b>Community Name</b></label>
-    <input type="text" placeholder="Enter Community Name" name="text" required>
-        
-    <button type="submit">Update Profile</button>
-   
-  </div>
-
+    <div class="container">
+      <label for="uname"><b>Department Name</b></label>
+      <input type="text" placeholder="Enter Department name" name="uname" required>
   
-</form>
+      <div class="form-group">
+        <label for="userlocation">Location</label>
+        <select class="form-control" id="userlocation" required>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Mombasa">Kisumu</option>
+
+
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="userlocation">Hood-Name</label>
+        <select class="form-control" id="userlocation" required>
+            <option value="Nairobi">Kariobangi</option>
+            <option value="Mombasa">Mathare</option>
+            <option value="Mombasa">Juja</option>
+
+
+        </select>
+    </div>
+    
+    
+
+
+
+      
+      <button type="submit">Create Business</button>
+      
+    </div>
+  
+    
+  </form>
 
 </body>
 </html>
